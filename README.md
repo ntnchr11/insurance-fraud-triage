@@ -122,27 +122,10 @@ Una precision nell'ordine di 0.14-0.18 può apparire bassa in assoluto, ma è co
 
 ## Struttura del repository
 
-insurance-fraud-triage/
-├── README.md
-├── PROJECT_PLAN.md
-├── requirements.txt
-├── data/
-│   ├── raw/
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-├── src/
-│   ├── ingest.py
-│   ├── silver.py
-│   ├── gold.py
-│   ├── modeling.py
-│   ├── threshold_analysis.py
-│   ├── visualize.py
-│   └── config_columns.yaml
-├── notebooks/
-├── docs/
-│   ├── architecture.md
-│   ├── data_dictionary.md
-│   └── figures/
-└── product/
-    └── PRD_fraud_triage.md
+Il repository è organizzato così:
+
+README.md e PROJECT_PLAN.md nella cartella principale
+data/ con le sottocartelle raw, bronze, silver, gold per i diversi livelli della pipeline dati
+src/ con tutti gli script Python: ingest.py, silver.py, gold.py, modeling.py, threshold_analysis.py, visualize.py, più il file di configurazione config_columns.yaml
+docs/ con architecture.md, data_dictionary.md e la sottocartella figures/ con i grafici
+product/ con il PRD (PRD_fraud_triage.md)

@@ -1,0 +1,58 @@
+# Mappatura tra i nomi di colonna del CSV scaricato e i nomi standardizzati
+# usati dalla pipeline (bronze/silver/gold).
+#
+target:
+  raw: FraudFound_P
+  standardized: is_fraud
+
+policy_id:
+  raw: PolicyNumber
+  standardized: policy_id
+
+vehicle_category:
+  raw: VehicleCategory
+  standardized: vehicle_category
+
+vehicle_price:
+  raw: VehiclePrice
+  standardized: vehicle_price
+
+policy_holder_age:
+  raw: AgeOfPolicyHolder
+  standardized: policy_holder_age
+
+driver_age:
+  raw: Age
+  standardized: driver_age
+
+past_claims_count:
+  raw: PastNumberOfClaims
+  standardized: past_claims_count
+
+police_report_filed:
+  raw: PoliceReportFiled
+  standardized: police_report_filed
+
+witness_present:
+  raw: WitnessPresent
+  standardized: witness_present
+
+fault:
+  raw: Fault
+  standardized: fault
+
+accident_area:
+  raw: AccidentArea
+  standardized: accident_area
+
+base_policy:
+  raw: BasePolicy
+  standardized: base_policy
+
+deductible:
+  raw: Deductible
+  standardized: deductible
+
+driver_rating:
+  raw: DriverRating
+  standardized: driver_rating
